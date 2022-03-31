@@ -5,19 +5,16 @@ email: lise.zambelli@gmail.com
 description: Pottery and Ceramics maker.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+street_address: 35 Via Campagliana
+city: Vinci
+zip_code: 50059
+country: Italy
+phone: +33 6 85 90 29 92
 posts_home: 3
 author: Massimo Zambelli
 author_url: https://hereismass.dev
 
-# homepage tiles
-# tiles-source: pages # accepts "posts" or "pages"
-# tiles-count: 6
+
 
 # social settings (key must match name of font awesome icon)
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands

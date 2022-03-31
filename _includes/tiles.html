@@ -1,17 +1,14 @@
+{% assign tiles = site.pages | where_exp: "item", "item.show_tile == true" %}
 <section id="one" class="tiles">
-  {{ site.categories }}
-  {% for category in site.categories %}
-
-  {{ category }}
-    {% if site.categories_img[category][1] %}
-      <article>
-        <span class="image">
-          <img src="{{ site.categories_img[category[0]][1] }}" alt="{{ category[0] }}" />
-        </span>
-        <header class="major">
-          <h3><a href="#" class="link">{{ category[0] }}</a></h3>
-        </header>
-      </article>
-    {% endif %}
-  {% endfor %}
+{% for tile in tiles %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
 </section>
