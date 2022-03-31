@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>{{ page.landing-title }}</h1>
+            </header>
+            <div class="content">
+                <p style="text-transform: uppercase;">{{ site.description }}</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button next scrolly">View my work</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        {% include tiles.html %}
+
+        <!-- Two -->
+        <section id="two">
+            <div class="inner">
+                {% for post in site.posts limit:site.posts_home %}
+                  {% if post.title != 404 %}
+                    <header class="major">
+                      <h2>{% if post.date %}{{ post.date | date_to_string }} - {% endif %}{{ post.title }}</h2>
+                    </header>
+                    <p>{{ post.content }}</p>
+                  {% endif %}
+                {% endfor %}
+                {% if site.posts.length > site.posts_home %}
+                <ul class="actions">
+                    <li><a href="allposts.html" class="button next">See more</a></li>
+                </ul>
+                {% endif %}
+            </div>
+        </section>
+
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
