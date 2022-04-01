@@ -1,8 +1,16 @@
 ---
-layout: galerie
+layout: gallery
 title: Vases
 description: I love vases
 image: assets/images/lise_vase.jpg
 show_tile: true
-pictures_type: vases
+images:
+  - path: assets/images/dessin.jpg
+    title: Quel dessin
+  - path: assets/images/lise_vase.jpg
+    title: Un vase en devenir
+  - path: assets/images/dessin.jpg
+    title: Quel dessin
+  - path: assets/images/lise_vase.jpg
+    title: Un vase en devenir
 ---
