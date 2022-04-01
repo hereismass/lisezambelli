@@ -3,7 +3,7 @@ title: Lise
 subtitle: Zambelli
 email: lise.zambelli@gmail.com
 description: Pottery and Ceramics maker.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/lisezambelli" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 street_address: 35 Via Campagliana
 city: Vinci
