@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lise Zambelli - Céramiste Artiste</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sélecteur de langue avec drapeaux intégré à la navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>Lise Zambelli</h2>
+        <span data-i18n="nav_job">Céramiste</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#accueil" class="nav-link" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="#parcours" class="nav-link" data-i18n="nav_journey">Parcours</a></li>
+        <li><a href="#oeuvres" class="nav-link" data-i18n="nav_works">Galerie</a></li>
+        <li><a href="#expositions" class="nav-link" data-i18n="nav_exhibitions">Expositions</a></li>
+        <li><a href="#workshops" class="nav-link" data-i18n="nav_workshops">Workshops</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div id="lang-switcher" style="display:flex;gap:0.7em;align-items:center;margin-left:2em;">
+        <img src="https://flagcdn.com/fr.svg" alt="Français" class="lang-flag" data-lang="fr" style="width:32px;cursor:pointer;border-radius:6px;box-shadow:0 2px 8px #0002;" />
+        <img src="https://flagcdn.com/it.svg" alt="Italiano" class="lang-flag" data-lang="it" style="width:32px;cursor:pointer;border-radius:6px;box-shadow:0 2px 8px #0002;" />
+        <img src="https://flagcdn.com/gb.svg" alt="English" class="lang-flag" data-lang="en" style="width:32px;cursor:pointer;border-radius:6px;box-shadow:0 2px 8px #0002;" />
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Accueil -->
+  <section id="accueil" class="hero">
+    <div class="hero-header-row" style="display:flex;align-items:center;gap:3.5rem;max-width:900px;margin:0 auto 2.5rem auto;">
+      <div class="hero-header-col" style="display:flex;flex-direction:column;align-items:center;min-width:200px;">
+        <img src="images/Lise Travail 2.jpg" alt="Lise Zambelli au travail" class="photo-lise" style="width: 340px; height: 340px; object-fit: cover; border-radius: 50%; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 4px solid #fff; margin-bottom:1.1rem;" />
+        <h1 data-i18n="hero_name" style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;letter-spacing:1px;color:#2c3e50;margin:0;">Lise Zambelli</h1>
+        <span data-i18n="hero_job" style="color:#bfa77a;font-size:1.05rem;letter-spacing:2px;text-transform:uppercase;">Céramiste</span>
+        <img src="IMAGES/Signature Lise.jpg" alt="Signature Lise" data-i18n-alt="works_signature" style="width:180px;max-width:80vw;margin:1.1em auto 0 auto;display:block;filter:drop-shadow(0 2px 8px #0002);" />
+      </div>
+      <div class="hero-header-col" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;flex:1;">
+        <p data-i18n="hero_text" style="font-size:1.25rem;margin-bottom:2.2rem;max-width:420px;">Créer avec la terre, donner vie à la matière, partager l'essence de la beauté naturelle</p>
+        <a href="#oeuvres" class="cta-button" data-i18n="hero_cta">Découvrir mes œuvres</a>
+        <p data-i18n="philo_beauty_text" style="margin-top:2.2rem;">Je cherche à capturer l'essence même de la beauté naturelle, celle qui émane de l'imperfection parfaite, des formes organiques et des textures qui racontent une histoire. Mes créations ne sont pas de simples objets, mais des témoins d'un moment, d'une émotion, d'une réflexion sur notre rapport au monde.</p>
+        <p data-i18n="philo_why_text">Dans un monde de plus en plus dématérialisé, je ressens le besoin profond de créer des objets tangibles, porteurs de sens et d'émotion. La céramique me permet de matérialiser mes pensées, mes rêves et mes questionnements sur la beauté, l'éphémère et l'éternel.</p>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <main id="content">
+    <div class="nature-divider"></div>
+
+  <!-- Section Parcours -->
+  <div class="ceramic-quote" style="display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:nowrap;max-width:700px;margin:2.5rem auto 0 auto;">
+    <img src="images/Lise travail 1.jpg" alt="Lise Zambelli au travail" style="width:220px;max-width:90vw;height:auto;border-radius:18px;box-shadow:0 8px 32px rgba(0,0,0,0.10);border:3px solid #fff;flex-shrink:0;">
+    <span data-i18n="ceramic_quote" style="font-size:1.05rem;line-height:1.7;display:block;">« La céramique est une étreinte de la terre et du feu,<br>une trace de la nature qui prend forme entre nos mains. »</span>
+  </div>
+
+  <section id="parcours" class="journey">
+    <div class="container">
+      <h2 style="font-family:'Playfair Display',serif;font-size:2.1rem;margin-bottom:0.5rem;">Lise Zambelli</h2>
+      <div data-i18n="parcours_affiliation" style="font-size:1.1rem;color:#2c3e50;line-height:1.7;margin-bottom:1.5rem;">Member of International Association of Ceramics AIC-IAC since 2019</div>
+      <div class="parcours-expos" style="margin-bottom:2.2rem;">
+        <h4 data-i18n="parcours_expos_title" style="font-size:1.15rem;color:#bfa77a;margin-bottom:0.7rem;">Main Recent Exhibitions</h4>
+        <ul data-i18n="parcours_expos_list" style="font-size:1.05rem;line-height:1.7;color:#2c3e50;list-style:disc;padding-left:1.5em;">
+          <li><div class="parcours-divider" style="height:1px;background:#e5e0d6;margin:1.2em 0 0.5em 0;"></div><b style="color:#bfa77a;">2024</b> – Sèvres contemporary ceramics 9th biennale, France<br>
+          &nbsp;&nbsp;– Ceramics market, Jindeszhen, China<br>
+          &nbsp;&nbsp;– Terralha ceramics festival, Saint Quentin la Poterie, France<br>
+          &nbsp;&nbsp;– Solo exhibition, Galerie Helène de Senneville, Mauritius Island</li>
+          <li><div class="parcours-divider" style="height:1px;background:#e5e0d6;margin:1.2em 0 0.5em 0;"></div><b style="color:#bfa77a;">2023</b> – Coffee cup competition, Yingge museum, Taipei<br>
+          &nbsp;&nbsp;– Tongin Gallery, Seoul, Korea, « 8 artists overseas »<br>
+          &nbsp;&nbsp;– Solo exhibition in Livorno fortress, Italy<br>
+          &nbsp;&nbsp;– Dimora gallery, Firenze<br>
+          &nbsp;&nbsp;– Melis competition, 3rd prize, Italy<br>
+          &nbsp;&nbsp;– Lapis Museum, Naples, Italy « water and seas »<br>
+          &nbsp;&nbsp;– Chawan expo, Miaoli, Taïwan<br>
+          &nbsp;&nbsp;– Monumental Sculpt' en Sologne, in a Loire castle, France</li>
+          <li><div class="parcours-divider" style="height:1px;background:#e5e0d6;margin:1.2em 0 0.5em 0;"></div><b style="color:#bfa77a;">2022</b> – Sèvres Biennale, France<br>
+          &nbsp;&nbsp;– Vietri sul mare, Italy, solo exhibition with Pandor Association<br>
+          &nbsp;&nbsp;– Faenza Argillà</li>
+          <li><div class="parcours-divider" style="height:1px;background:#e5e0d6;margin:1.2em 0 0.5em 0;"></div><b style="color:#bfa77a;">2021</b> – Mouffetard ceramics market, Paris<br>
+          &nbsp;&nbsp;– Solo exhibition, Gallery Ephémère, Saint Maur des Fosses, France</li>
+          <li><div class="parcours-divider" style="height:1px;background:#e5e0d6;margin:1.2em 0 0.5em 0;"></div><b style="color:#bfa77a;">2020</b> – India : exhibition in Bhopal, 8 foreigners ceramists<br>
+          &nbsp;&nbsp;– Solo exhibition, Fondation patrimoine, Sèvres, France<br>
+          &nbsp;&nbsp;– Sèvres biennale, France</li>
+          <li><div class="parcours-divider" style="height:1px;background:#e5e0d6;margin:1.2em 0 0.5em 0;"></div><b style="color:#bfa77a;">2019</b> – Mosca, Russia : solo exhibition in Tsaritsyno museum, first exhibition with a foreigner artist<br>
+          &nbsp;&nbsp;– China, Hebei province : exhibition and residence<br>
+          &nbsp;&nbsp;– Exhibition in Ville d'Avray, near Paris<br>
+          &nbsp;&nbsp;– Mouffetard Ceramics Market, Paris</li>
+          <li><div class="parcours-divider" style="height:1px;background:#e5e0d6;margin:1.2em 0 0.5em 0;"></div><b style="color:#bfa77a;">2018</b> – Pentic center, Posio, Finland<br>
+          &nbsp;&nbsp;– Shanjin museum, province of Hebei, China<br>
+          &nbsp;&nbsp;– Sèvres biennale, ArtCeram, France<br>
+          &nbsp;&nbsp;– SNAA, National Salon of Animal Arts, Bry sur marne<br>
+          &nbsp;&nbsp;– Solo exhibition Ephémère gallery, Saint Maur des Fossés<br>
+          &nbsp;&nbsp;– Salon AVM, La Varenne, France</li>
+        </ul>
+      </div>
+      <h4 data-i18n="parcours_bio_title" style="font-size:1.15rem;color:#bfa77a;margin-bottom:0.7rem;">Biography</h4>
+      <div class="parcours-bio" data-i18n="parcours_bio" style="font-size:1.08rem;line-height:1.8;color:#444;margin-bottom:1.7rem;max-width:700px;">
+        Lise est née à Bordeaux, en France. Elle a déménagé en Italie en 2021, à Vinci
+        First she was pianist and teaching piano in conservatories. Then she studied decorative painting and story of Art in school of Louvre in Paris. After a ceramics residence in Tokoname, Japan, in 2010, she oriented her life to ceramics world. Many workshops, symposium in different countries: Korea, China, Finland, Taiwan, Hungary.... Exhibitions often shared, sometimes in solo as in December 2019 in Moscow, Russia.<br>
+        For the second time, she is invited to go to Mauritius island in order to install a ceramics atelier for local people. Then through a gallery these ceramics are sold to tourists and hotels.<br>
+        She like to do animals and bodies. But also she started to do monumental sculptures when collectors asked her to exhibit in a monumental ceramics exhibition. Of course The size of the kiln is a limit to build, that's why their sculptures are similar to totems composed with several pieces.<br>
+        The most important is sharing ceramics knowledge with friends. She is member of ArtCeram2 in Sèvres since 2014 and member of International Association of Ceramics since 2019.<br>
+        A symposium with monumental sculptures and sharing this experience with other ceramists would be a beautiful realization.
+      </div>
+      <div class="parcours-langues" data-i18n="parcours_langues" style="font-size:1.05rem;color:#7f8c8d;">
+        <b>Languages spoken :</b> French, Italian, English.<br>
+        <b>Languages studied at school :</b> German and Russian
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Œuvres -->
+  <section id="oeuvres" class="works">
+    <div class="container">
+      <h2 class="section-title" data-i18n="works_title" style="display:none;">Mes Œuvres</h2>
+      <div class="gallery-intro" style="max-width:600px;margin:0 auto 1.5em auto;text-align:center;font-size:1.13rem;line-height:1.7;">
+        <span data-i18n="gallery_intro"></span>
+      </div>
+      <div class="nature-divider"></div>
+      <div class="works-overlay" id="worksOverlay" style="display:none;"></div>
+      <!-- Filtres par thèmes avec image -->
+      <div class="works-filters works-filters-images" style="display:flex;gap:2.5em;justify-content:center;flex-wrap:wrap;margin-bottom:2.5em;">
+        <button class="filter-btn filter-btn-image" data-theme="animaux">
+          <img src="IMAGES/animaux/Bear on iceberg.jpg" alt="Animaux" style="width:110px;height:110px;object-fit:cover;border-radius:18px;box-shadow:0 4px 18px #0002;margin-bottom:0.7em;display:block;" />
+          <span class="filter-label" data-i18n="works_theme_animaux">Animaux</span>
+        </button>
+        <button class="filter-btn filter-btn-image" data-theme="divers">
+          <img src="IMAGES/divers/Pouf.jpeg" alt="Divers" style="width:110px;height:110px;object-fit:cover;border-radius:18px;box-shadow:0 4px 18px #0002;margin-bottom:0.7em;display:block;" />
+          <span class="filter-label" data-i18n="works_theme_divers">Divers</span>
+        </button>
+        <button class="filter-btn filter-btn-image" data-theme="sculptures">
+          <img src="IMAGES/sculptures/A la folie.jpg" alt="Sculptures" style="width:110px;height:110px;object-fit:cover;border-radius:18px;box-shadow:0 4px 18px #0002;margin-bottom:0.7em;display:block;" />
+          <span class="filter-label" data-i18n="works_theme_sculptures">Sculptures</span>
+        </button>
+        <button class="filter-btn filter-btn-image" data-theme="tabourets">
+          <img src="IMAGES/tabourets/Cactus.png" alt="Tabourets" style="width:110px;height:110px;object-fit:cover;border-radius:18px;box-shadow:0 4px 18px #0002;margin-bottom:0.7em;display:block;" />
+          <span class="filter-label" data-i18n="works_theme_tabourets">Tabourets</span>
+        </button>
+        <button class="filter-btn filter-btn-image" data-theme="totems">
+          <img src="IMAGES/totems/1er Totem madame monsieur.png" alt="Totems" style="width:110px;height:110px;object-fit:cover;border-radius:18px;box-shadow:0 4px 18px #0002;margin-bottom:0.7em;display:block;" />
+          <span class="filter-label" data-i18n="works_theme_totems">Totems</span>
+        </button>
+      </div>
+      <!-- Bloc caché pour la lightbox : toutes les images de chaque catégorie -->
+      <div id="hidden-works" style="display:none;">
+        <!-- Animaux -->
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Bear on iceberg.jpg" class="work-photo" /><div class="work-info"><h3>Bear on iceberg</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Orsi polari.jpeg" class="work-photo" /><div class="work-info"><h3>Orsi polari</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Réconfort.jpeg" class="work-photo" /><div class="work-info"><h3>Réconfort</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/La forêt.jpeg" class="work-photo" /><div class="work-info"><h3>La forêt</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/En attente.jpeg" class="work-photo" /><div class="work-info"><h3>En attente</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Dog.jpeg" class="work-photo" /><div class="work-info"><h3>Dog</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Help!.jpeg" class="work-photo" /><div class="work-info"><h3>Help!</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Autre groupe Polar bears.jpeg" class="work-photo" /><div class="work-info"><h3>Autre groupe Polar bears</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Singe.jpg" class="work-photo" /><div class="work-info"><h3>Singe</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Orso filosofo.jpg" class="work-photo" /><div class="work-info"><h3>Orso filosofo</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Group Polar bears.jpeg" class="work-photo" /><div class="work-info"><h3>Group Polar bears</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Iceberg.jpeg" class="work-photo" /><div class="work-info"><h3>Iceberg</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Espoir.jpg" class="work-photo" /><div class="work-info"><h3>Espoir</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Under construction.JPG" class="work-photo" /><div class="work-info"><h3>Under construction</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Naked raku.jpg" class="work-photo" /><div class="work-info"><h3>Naked raku</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Solitudine.png" class="work-photo" /><div class="work-info"><h3>Solitudine</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/With mom.jpg" class="work-photo" /><div class="work-info"><h3>With mom</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Alone.jpg" class="work-photo" /><div class="work-info"><h3>Alone</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Raku bear.jpg" class="work-photo" /><div class="work-info"><h3>Raku bear</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Animals art book french artists 2016.jpg" class="work-photo" /><div class="work-info"><h3>Animals art book french artists 2016</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Panthère.JPG" class="work-photo" /><div class="work-info"><h3>Panthère</h3></div></div>
+        <div class="work-item" data-themes="animaux"><img src="IMAGES/animaux/Maman ourse.png" class="work-photo" /><div class="work-info"><h3>Maman ourse</h3></div></div>
+        <!-- Divers -->
+        <div class="work-item" data-themes="divers"><img src="IMAGES/divers/Pouf.jpeg" class="work-photo" /><div class="work-info"><h3>Pouf</h3></div></div>
+        <div class="work-item" data-themes="divers"><img src="IMAGES/divers/White cube.jpg" class="work-photo" /><div class="work-info"><h3>White cube</h3></div></div>
+        <div class="work-item" data-themes="divers"><img src="IMAGES/divers/Competition Melis 3rd prize .jpeg" class="work-photo" /><div class="work-info"><h3>Competition Melis 3rd prize</h3></div></div>
+        <div class="work-item" data-themes="divers"><img src="IMAGES/divers/Chawan expo taiwan.jpg" class="work-photo" /><div class="work-info"><h3>Chawan expo taiwan</h3></div></div>
+        <div class="work-item" data-themes="divers"><img src="IMAGES/divers/Coffee cup competition Taiwan.jpeg" class="work-photo" /><div class="work-info"><h3>Coffee cup competition Taiwan</h3></div></div>
+        <div class="work-item" data-themes="divers"><img src="IMAGES/divers/Competition tea pot Taiwan.jpg" class="work-photo" /><div class="work-info"><h3>Competition tea pot Taiwan</h3></div></div>
+        <div class="work-item" data-themes="divers"><img src="IMAGES/divers/Gateau terrien.jpg" class="work-photo" /><div class="work-info"><h3>Gateau terrien</h3></div></div>
+        <div class="work-item" data-themes="divers"><img src="IMAGES/divers/Mostra a Castellamonte coffee cup .jpg" class="work-photo" /><div class="work-info"><h3>Mostra a Castellamonte coffee cup</h3></div></div>
+        <!-- Sculptures -->
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/A la folie.jpg" class="work-photo" /><div class="work-info"><h3>A la folie</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Arlequin.jpg" class="work-photo" /><div class="work-info"><h3>Arlequin</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/C'est moi!.jpg" class="work-photo" /><div class="work-info"><h3>C'est moi!</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Couple Faenza.jpeg" class="work-photo" /><div class="work-info"><h3>Couple Faenza</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Eleanore.jpg" class="work-photo" /><div class="work-info"><h3>Eleanore</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/In the clouds.jpg" class="work-photo" /><div class="work-info"><h3>In the clouds</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/La fleur.jpg" class="work-photo" /><div class="work-info"><h3>La fleur</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/La pimbêche.JPG" class="work-photo" /><div class="work-info"><h3>La pimbêche</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Le garçon à l'oiseau.jpg" class="work-photo" /><div class="work-info"><h3>Le garçon à l'oiseau</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Nounours adoré.jpg" class="work-photo" /><div class="work-info"><h3>Nounours adoré</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/On his Cloud .PNG" class="work-photo" /><div class="work-info"><h3>On his Cloud</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Pensive.jpg" class="work-photo" /><div class="work-info"><h3>Pensive</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Princesse des îles.JPG" class="work-photo" /><div class="work-info"><h3>Princesse des îles</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Ribambelle.png" class="work-photo" /><div class="work-info"><h3>Ribambelle</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Scala museo Lapis Napoli.png" class="work-photo" /><div class="work-info"><h3>Scala museo Lapis Napoli</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Sirena.jpg" class="work-photo" /><div class="work-info"><h3>Sirena</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Sirenetta2.JPG" class="work-photo" /><div class="work-info"><h3>Sirenetta2</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Some portraits.jpg" class="work-photo" /><div class="work-info"><h3>Some portraits</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Teodora.jpg" class="work-photo" /><div class="work-info"><h3>Teodora</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Torso Raku 20cm Ht.jpg" class="work-photo" /><div class="work-info"><h3>Torso Raku 20cm Ht</h3></div></div>
+        <div class="work-item" data-themes="sculptures"><img src="IMAGES/sculptures/Vampire and victime.jpg" class="work-photo" /><div class="work-info"><h3>Vampire and victime</h3></div></div>
+        <!-- Tabourets -->
+        <div class="work-item" data-themes="tabourets"><img src="IMAGES/tabourets/Cactus.png" class="work-photo" /><div class="work-info"><h3>Cactus</h3></div></div>
+        <div class="work-item" data-themes="tabourets"><img src="IMAGES/tabourets/Some stools.jpg" class="work-photo" /><div class="work-info"><h3>Some stools</h3></div></div>
+        <div class="work-item" data-themes="tabourets"><img src="IMAGES/tabourets/Tabouret Impression Marine.png" class="work-photo" /><div class="work-info"><h3>Tabouret Impression Marine</h3></div></div>
+        <div class="work-item" data-themes="tabourets"><img src="IMAGES/tabourets/Tabouret La Mer.jpg" class="work-photo" /><div class="work-info"><h3>Tabouret La Mer</h3></div></div>
+        <div class="work-item" data-themes="tabourets"><img src="IMAGES/tabourets/Tabouret Les colonnes.png" class="work-photo" /><div class="work-info"><h3>Tabouret Les colonnes</h3></div></div>
+        <div class="work-item" data-themes="tabourets"><img src="IMAGES/tabourets/Tabouret piscine.png" class="work-photo" /><div class="work-info"><h3>Tabouret piscine</h3></div></div>
+        <div class="work-item" data-themes="tabourets"><img src="IMAGES/tabourets/Tabouret Rêve.jpg" class="work-photo" /><div class="work-info"><h3>Tabouret Rêve</h3></div></div>
+        <div class="work-item" data-themes="tabourets"><img src="IMAGES/tabourets/Tabourets Cuisson au Bois.jpeg" class="work-photo" /><div class="work-info"><h3>Tabourets Cuisson au Bois</h3></div></div>
+        <div class="work-item" data-themes="tabourets"><img src="IMAGES/tabourets/Tabourets ronds.JPG" class="work-photo" /><div class="work-info"><h3>Tabourets ronds</h3></div></div>
+        <!-- Totems -->
+        <div class="work-item" data-themes="totems"><img src="IMAGES/totems/1er Totem madame monsieur.png" class="work-photo" /><div class="work-info"><h3>1er Totem madame monsieur</h3></div></div>
+        <div class="work-item" data-themes="totems"><img src="IMAGES/totems/Le quatuor.JPG" class="work-photo" /><div class="work-info"><h3>Le quatuor</h3></div></div>
+        <div class="work-item" data-themes="totems"><img src="IMAGES/totems/Madame Monsieur du sud.JPG" class="work-photo" /><div class="work-info"><h3>Madame Monsieur du sud</h3></div></div>
+        <div class="work-item" data-themes="totems"><img src="IMAGES/totems/Madame monsieur la nuit.png" class="work-photo" /><div class="work-info"><h3>Madame monsieur la nuit</h3></div></div>
+        <div class="work-item" data-themes="totems"><img src="IMAGES/totems/Totem Solitaire.jpeg" class="work-photo" /><div class="work-info"><h3>Totem Solitaire</h3></div></div>
+      </div>
+      <!-- Suppression de l'affichage des autres œuvres -->
+      <!-- <div class="works-group"> ... </div> -->
+    </div>
+  </section>
+
+  <!-- Section Expositions -->
+  <section id="expositions" class="exhibitions">
+    <div class="container">
+      <button id="slideshow-close-btn" style="display:none;position:fixed;top:24px;right:32px;z-index:10001;font-size:2.2rem;background:none;border:none;color:#222;cursor:pointer;">&times;</button>
+      <h2 class="section-title" data-i18n="exhibitions_title">Quelques Expositions passées</h2>
+      <div class="exhibitions-grid">
+        <!-- 2025 -->
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2025" style="font-size:1.05em;">2025</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2025_lapis_title">Musée Souterrain Lapis – Naples, Italie</h3>
+            <p data-i18n="expo_2025_lapis_desc">Exposition dans les galeries souterraines où les Napolitains se réfugiaient durant les bombardements de la Seconde Guerre mondiale. Un dialogue entre mémoire collective et matière.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/sculptures/Scala museo Lapis Napoli.png" alt="Scala museo Lapis Napoli" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+            </div>
+          </div>
+        </div>
+        <!-- 2024 -->
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2024" style="font-size:1.05em;">2024</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2024_terralha_title">Terralha – Saint-Quentin-la-Poterie (34), France</h3>
+            <p data-i18n="expo_2024_terralha_desc">Festival annuel de céramique contemporaine. Chaque artiste est invité à exposer chez l’habitant, dans des lieux inattendus et chargés d’âme.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/Exposition/Terralha.jpg" alt="Terralha" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+            </div>
+          </div>
+        </div>
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2024" style="font-size:1.05em;">2024</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2024_totems_title">Installation des Totems Madame & Monsieur – Sèvres (92), France</h3>
+            <p data-i18n="expo_2024_totems_desc">À la suite de la 9e Biennale de céramique contemporaine, les totems ont été installés de façon permanente dans la cour de la mairie.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/Exposition/Sevres.JPG" alt="Sèvres" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+              <img src="IMAGES/Exposition/Mairie de Sèvres.JPG" alt="Mairie de Sèvres" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+            </div>
+          </div>
+        </div>
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2024" style="font-size:1.05em;">2024</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2024_vinci_title">Vinci (FI), Italie</h3>
+            <p data-i18n="expo_2024_vinci_desc">Création et donation de quatre plaques de céramique à la ville de Vinci pour célébrer l’anniversaire de Léonard de Vinci.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/Exposition/Vinci.jpg" alt="Vinci" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+            </div>
+          </div>
+        </div>
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2024" style="font-size:1.05em;">2024</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2024_maurice_title">Île Maurice</h3>
+            <p data-i18n="expo_2024_maurice_desc">Organisation et installation d’un atelier de céramique destiné aux femmes mauriciennes, pour une production artisanale locale vendue aux touristes.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/Exposition/Ile Maurice.jpg" alt="Ile Maurice" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+            </div>
+          </div>
+        </div>
+        <!-- 2023 -->
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2023" style="font-size:1.05em;">2023</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2023_seoul_title">Séoul, Corée du Sud</h3>
+            <p data-i18n="expo_2023_seoul_desc">Invitation par la galerie Tong-In, spécialisée en céramique ancienne et contemporaine. Une rencontre entre tradition coréenne et création contemporaine dans un lieu emblématique du patrimoine vivant asiatique.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/Exposition/Corrè.jpg" alt="Corè" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+            </div>
+          </div>
+        </div>
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2023" style="font-size:1.05em;">2023</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2023_melis_title">Deuxième Compétition de Céramique – Frères Melis, Bosa (Sardaigne), Italie</h3>
+            <p data-i18n="expo_2023_melis_desc">Participation à la compétition. Troisième prix obtenu pour une pièce contemporaine mêlant tradition et expérimentation.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/Exposition/Melis1.jpg" alt="Melis 1" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+              <img src="IMAGES/Exposition/Melis2.jpg" alt="Melis 2" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+            </div>
+          </div>
+        </div>
+        <!-- 2022 -->
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2022" style="font-size:1.05em;">2022</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2022_taiwan_title">Concours de Tasses à Café – Taipei, Taïwan</h3>
+            <p data-i18n="expo_2022_taiwan_desc">Exploration du geste du quotidien à travers une forme familière : la tasse.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/Exposition/ Competition Yingge Taiwan 2022.jpg" alt="Competition Yingge Taiwan 2022" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+            </div>
+          </div>
+        </div>
+        <!-- 2022 -->
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2022" style="font-size:1.05em;">2022</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2022_matres_title">CAVA DE TERRENI (Salerno)</h3>
+            <p data-i18n="expo_2022_matres_desc">Exposition organisée par MATRES<br>Participation à une exposition collective initiée par MATRES, une association internationale de femmes céramistes engagées dans la promotion de la création féminine en céramique contemporaine.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <video controls style="max-width:320px;border-radius:12px;box-shadow:0 4px 18px #0002;">
+                <source src="IMAGES/Exposition/MATRES.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- 2020 -->
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2020" style="font-size:1.05em;">2020</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2020_bhopal_title">Bhopal, Inde</h3>
+            <p data-i18n="expo_2020_bhopal_desc">Exposition collective avec 8 artistes internationaux. Échanges et rencontres avec des artistes indiens autour de la céramique contemporaine.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/Exposition/Bharat Bhawan India 2020.jpg" alt="Bharat Bhawan India 2020" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;cursor:zoom-in;" />
+            </div>
+          </div>
+        </div>
+        <!-- 2019 -->
+        <div class="exhibition-item">
+          <div class="exhibition-date"><span class="year year-2019" style="font-size:1.05em;">2019</span></div>
+          <div class="exhibition-content">
+            <h3 data-i18n="expo_2019_tsarytsino_title">Exposition personnelle – Musée Tsarytsino, Moscou, Russie</h3>
+            <p data-i18n="expo_2019_tsarytsino_desc">Exposition personnelle au Musée Tsarytsino, Moscou, Russie.</p>
+            <div class="expo-photos" style="display:flex;gap:18px;margin-top:1em;flex-wrap:wrap;justify-content:center;">
+              <img src="IMAGES/Exposition/Tsarytsino Museum Lise.jpg" alt="Musée Tsarytsino Lise" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;">
+              <img src="IMAGES/Exposition/Tsarytsino museum castle.jpeg" alt="Musée Tsarytsino château" class="expo-photo" style="max-width:220px;border-radius:12px;box-shadow:0 4px 18px #0002;">
+              <video controls style="max-width:320px;border-radius:12px;box-shadow:0 4px 18px #0002;">
+                <source src="IMAGES/Exposition/Lise Mosca Museo.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Workshops -->
+  <section id="workshops" class="workshops">
+    <div class="container">
+      <h2 class="section-title" data-i18n="workshops_title" style="display:none;">Workshops</h2>
+      <div class="workshops-content">
+        <div class="workshops-intro">
+          <h3 data-i18n="workshops_intro_title" style="display:none;">Ateliers de Céramique avec Lise Zambelli</h3>
+          <p data-i18n="workshops_intro_text" style="display:none;">Participez à des ateliers créatifs pour découvrir l'art de la céramique, apprendre les techniques de modelage, d'émaillage et de cuisson, et exprimer votre créativité dans une ambiance conviviale et inspirante.</p>
+        </div>
+        <div class="workshops-list">
+          <div class="workshop-item">
+            <h4 data-i18n="workshop1_title" style="display:none;">Cuisson RAKU</h4>
+            <p data-i18n="workshop1_text" style="display:none;">Une technique que j'aime particulièrement... (voir JS pour le texte complet)</p>
+            <video controls style="width:100%;max-width:480px;border-radius:15px;box-shadow:0 8px 24px rgba(0,0,0,0.10);margin-bottom:1.2rem;object-fit:cover;">
+              <source src="IMAGES/RAKU alla campagna - Lise Zambelli.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+          </div>
+          <div class="workshop-item">
+            <h4 data-i18n="workshop2_title" style="display:none;">Stage Créatif : Sérigraphie</h4>
+            <p data-i18n="workshop2_date" style="display:none;"><strong>Date :</strong> 12-18 mai 2025</p>
+            <p data-i18n="workshop2_lieu" style="display:none;"><strong>Lieu :</strong> Vinci, Tuscany</p>
+            <ul data-i18n="workshop2_text" style="display:none;color:#7f8c8d;font-size:1.05rem;margin-bottom:1.2rem;line-height:1.7;font-weight:300;list-style:disc;padding-left:1.5em;">
+              <li>Preparation of frames and drawings</li>
+              <li>Clay preparation.</li>
+              <li>Canvas induction.</li>
+              <li>Serigraphy on clay.</li>
+              <li>Further serigraphy frames to master the technique.</li>
+            </ul>
+            <div class="workshop-media">
+              <video controls style="width:100%;max-width:480px;border-radius:15px;box-shadow:0 8px 24px rgba(0,0,0,0.10);">
+                <source src="images/Serigraphy Workshop in Tuscany May 2025 HIGH DEF.mov" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+          </div>
+          <!-- Suppression du workshop 3 (SQAvoir et Emotion) -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact_title" style="display:none;">Contact</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3 data-i18n="contact_intro_title" style="display:none;">Travaillons Ensemble</h3>
+          <p data-i18n="contact_intro_text" style="display:none;">Vous souhaitez découvrir mes œuvres, commander une pièce unique ou organiser une exposition ? N'hésitez pas à me contacter.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span data-i18n="contact_email" style="display:none;">lise.zambelli@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span data-i18n="contact_tel" style="display:none;">+33 6 85 90 29 92 (FR) / +39 328 854 7857 (IT)</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-instagram"></i>
+              <span><a href="https://instagram.com/lisejzambelli" target="_blank" style="color:#bfa77a;">Lise Jégat-Zambelli</a></span>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Votre nom" required data-i18n-placeholder="form_name_placeholder">
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Votre email" required data-i18n-placeholder="form_email_placeholder">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Sujet" data-i18n-placeholder="form_subject_placeholder">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Votre message" rows="5" required data-i18n-placeholder="form_message_placeholder"></textarea>
+            </div>
+            <button type="submit" class="submit-button" data-i18n="form_submit">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 data-i18n="footer_name" style="display:none;">Lise Zambelli</h3>
+          <p data-i18n="footer_desc" style="display:none;">Artiste céramiste passionnée par la beauté naturelle et l'expression artistique à travers la terre.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#accueil" data-i18n="footer_nav_home" style="display:none;">Accueil</a></li>
+            <li><a href="#parcours" data-i18n="footer_nav_journey" style="display:none;">Parcours</a></li>
+            <li><a href="#oeuvres" data-i18n="footer_nav_works" style="display:none;">Œuvres</a></li>
+            <li><a href="#expositions" data-i18n="footer_nav_exhibitions" style="display:none;">Expositions</a></li>
+            <li><a href="#workshops" data-i18n="footer_nav_workshops" style="display:none;">Workshops</a></li>
+            <li><a href="#contact" data-i18n="footer_nav_contact" style="display:none;">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="footer_contact_title" style="display:none;">Contact</h4>
+          <p data-i18n="footer_contact_email" style="display:none;">lise.zambelli@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copyright" style="display:none;">&copy; 2024 Lise Zambelli. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox pour la galerie des œuvres -->
+  <div id="lightbox-overlay" class="lightbox-overlay" style="display:none;">
+    <button id="lightbox-prev" class="lightbox-nav" style="position:absolute;left:20px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.2);border:none;color:white;font-size:32px;padding:15px;border-radius:50%;cursor:pointer;transition:background 0.3s;z-index:10001;">&#8249;</button>
+    <span id="lightbox-close" class="lightbox-close">&times;</span>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="Œuvre agrandie" />
+    <button id="lightbox-next" class="lightbox-nav" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.2);border:none;color:white;font-size:32px;padding:15px;border-radius:50%;cursor:pointer;transition:background 0.3s;z-index:10001;">&#8250;</button>
+  </div>
+
+  <div id="expo-lightbox" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);justify-content:center;align-items:center;">
+    <button id="expo-lightbox-prev" style="position:absolute;left:20px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.2);border:none;color:white;font-size:24px;padding:15px;border-radius:50%;cursor:pointer;transition:background 0.3s;">‹</button>
+    <img id="expo-lightbox-img" src="" alt="Agrandissement" style="max-width:90vw;max-height:90vh;border-radius:12px;box-shadow:0 4px 32px #000a;">
+    <button id="expo-lightbox-next" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.2);border:none;color:white;font-size:24px;padding:15px;border-radius:50%;cursor:pointer;transition:background 0.3s;">›</button>
+  </div>
+
+  <div id="slideshow-overlay" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:10010;background:#fff;align-items:center;justify-content:center;flex-direction:column;">
+    <button id="slideshow-close-btn" style="position:absolute;top:24px;right:32px;z-index:10011;font-size:2.2rem;background:none;border:none;color:#222;cursor:pointer;">&times;</button>
+    <img id="slideshow-img" src="" alt="Œuvre" style="max-width:100vw;max-height:100vh;object-fit:contain;display:block;margin:0 auto;" />
+  </div>
+
+  <script src="lise-site.js"></script>
+</body>
+</html> 
