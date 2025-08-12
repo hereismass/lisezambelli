@@ -891,11 +891,6 @@ body {
   background: linear-gradient(180deg, transparent, rgba(230, 126, 34, 0.05));
 }
 
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-}
 
 .contact-info h3 {
   font-family: 'Playfair Display', serif;
@@ -940,9 +935,15 @@ body {
   text-align: center;
 }
 
+.contact-item a {
+  color: #bfa77a;
+  text-decoration: none;
+}
+
 .social-links {
   display: flex;
   gap: 1.5rem;
+  justify-content: center;
 }
 
 .social-link {
@@ -1052,10 +1053,14 @@ body {
   font-weight: 600;
 }
 
-.footer-section p {
+.footer-section p, .footer-section a {
   color: #bdc3c7;
   line-height: 1.7;
   font-weight: 300;
+}
+
+.footer-section a:hover {
+  color: #e67e22;
 }
 
 .footer-section ul {
@@ -1172,10 +1177,7 @@ body {
   .section-title {
     font-size: 2rem;
   }
-  
-  .contact-form {
-    padding: 2rem;
-  }
+
 }
 
 /* Workshops Section */
